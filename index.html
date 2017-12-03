@@ -17,6 +17,20 @@
         <nav role="navigation" class="row">
         </nav>
         <footer role="contentinfo" id="status"></footer>
+
+        <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD4gxR_TDpUEgA125ee5UW1XJIEGMRtAqg",
+            authDomain: "rote-prep.firebaseapp.com",
+            databaseURL: "https://rote-prep.firebaseio.com",
+            projectId: "rote-prep",
+            storageBucket: "rote-prep.appspot.com",
+            messagingSenderId: "45648412729"
+        };
+        firebase.initializeApp(config);
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="./question-bank.js"></script>

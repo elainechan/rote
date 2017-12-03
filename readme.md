@@ -6,6 +6,12 @@ Brush up your Web development knowledge for that dream job interview.
 
 See [requirements.md](./requirements.md) for requirements checklist.
 
+## Tentative Stack
+* Backend: Node
+* Storage: Firebase Cloud Storage
+* Database: Firebase Realtime Database
+* Frontend: ?
+
 ## Topics Covered
 * [x] HTML
 * [x] CSS
