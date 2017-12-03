@@ -20,17 +20,18 @@ function shuffle(arr) {
 // take array of objects and an indicator, return naked array of keys or properties
 function nakedValues(arrayOfObjects, zeroOrOne) { // if 0 return keys, if 1 return properties
     console.log(`nakedValues() was called`);
-    var twoDArray = arrayOfObjects.map( (entry, i) => {
-        return Object.values(arrayOfObjects[i]);
-    });
-    var oneDArray = twoDArray.map(entry => {
-        return entry[zeroOrOne];
-    });
-    return oneDArray;
+    let answers = []
+    for(let i=0; i<arrayOfObjects.length; i++) {
+      answers.push(arrayOfObjects[i].answer)
+    }
+    return answers;
 }
 
 function getOriginalIndex(value) { // get pre-shuffle index for checking answer correctness
-    let originalIndex = _.findIndex(BANK[STATE.currentQ][0].answers, function(o) { return o.answer == value; });
+    console.log(`getOriginalIndex() was called`);
+    let originalIndex = _.findIndex(BANK[STATE.currentQ].answers, function(o) {
+      return o.answer == value; 
+    });
     return originalIndex;
 }
 

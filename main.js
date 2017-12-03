@@ -1,4 +1,12 @@
 'use strict';
+const database = firebase.database().ref()
+let BANK
+
+database.on('value', function(snapshot) {
+  BANK = snapshot.val()
+  console.log(BANK)
+  $(updateView);
+});
 
 const STATE = {
     currentQ: -1, // -1 before program starts
@@ -17,6 +25,9 @@ function updateView() {
         if(STATE.displayMode === "QUESTION") {
             renderQuestion(STATE);
             renderNav(STATE.displayMode);
+        } else if(STATE.displayMode ==='TRANSLATE') {
+            renderTranslatedQuestion(STATE)
+            renderNav(STATE.displayMode)
         } else { // FEEDBACK mode
             renderFeedback(STATE);
             renderNav(STATE.displayMode);
@@ -56,17 +67,50 @@ function setHandleStartButton() {
 function renderQuestion(state) {
     console.log("`renderQuestion()` was called");
     $("main").html(generateQuestion(state.currentQ));
-    $("#logo-container").append(generateTopicLogo(BANK[state.currentQ][0].topic)); // append logo
+    $("#logo-container").append(generateTopicLogo(BANK[state.currentQ].topic)); // append logo
     $("#question-form > fieldset").append(generateAnswerChoices(state.currentQ)); // append choices
     $("#question-form").append(generateSubmitAnswerButton()); // append submit button
+    $("#question-form").append(generateTranslaterButton()); // append translate button
     setHandleAnswerChecked();
     setHandleSubmitAnswer();
 }
 
+function renderTranslatedQuestion(state) {
+    console.log("`renderQuestion()` was called");
+    $("main").html(translateQuestion(state.currentQ));
+    $("#logo-container").append(generateTopicLogo(BANK[state.currentQ].topic)); // append logo
+    $("#question-form > fieldset").append(generateAnswerChoices(state.currentQ)); // append choices
+    $("#question-form").append(generateSubmitAnswerButton()); // append submit button
+    $("#question-form").append(generateTranslaterButton()); // append translate button
+    setHandleAnswerChecked();
+    setHandleSubmitAnswer();
+}
+
+
 function generateQuestion(questionIndex) {
     console.log("`generateQuestion()` was called");
     let currentQuestion = BANK[questionIndex];
-    let questionStatement = `${currentQuestion[0].question}`;
+    console.log(currentQuestion.translation.de)
+    let questionStatement = `${currentQuestion.question}`;
+    let questionForm = `<section role="region" aria-labelledby="question" id="question-section">
+    <div class="row">
+    <div class="col" id="logo-container">
+    </div><!--col-->
+    <div class="col" id="question-container"><form aria-labelledby="question" id="question-form">
+    <h3 id="question-number">
+    Question ${questionIndex + 1} of ${BANK.length}
+    </h3>
+    <fieldset id="question-content"><legend id="question-statement">${questionStatement}</legend></fieldset></form>
+    </div><!--col-->
+    </div><!--row-->
+    </section>`;
+    return questionForm;
+}
+
+function translateQuestion(questionIndex) {
+    console.log("`translateQuestion()` was called");
+    let currentQuestion = BANK[questionIndex].translation.de;
+    let questionStatement = `${currentQuestion.question}`;
     let questionForm = `<section role="region" aria-labelledby="question" id="question-section">
     <div class="row">
     <div class="col" id="logo-container">
@@ -84,7 +128,7 @@ function generateQuestion(questionIndex) {
 
 function generateAnswerChoices(questionIndex) {
     console.log("`generateAnswerChoices()` was called");
-    let answers = nakedValues(BANK[STATE.currentQ][0].answers, 1);
+    let answers = nakedValues(BANK[STATE.currentQ].answers, 1);
     let shuffledAnswers = shuffle(answers); // array
     let answerChoices = shuffledAnswers.map( (answer, index) => {
         let answerChoice = `<div class="answer-choice"><input type="radio" name="answer-checkbox" class="answer-checkbox" id=${getOriginalIndex(answer)}><label for="answer${getOriginalIndex(answer)}" class="answer-text">${answer}</label></div>`;
@@ -111,6 +155,12 @@ function generateSubmitAnswerButton() { // initially disabled
     return answerButton;
 }
 
+function generateTranslaterButton() {
+    console.log("`generateTranslaterButton()` was called");
+    let translateButton = `<button id="translate-answer">Translate</button>`;
+    return translateButton;
+}
+
 function setHandleSubmitAnswer() {
     console.log("`setHandleSubmitAnswer()` was called");
     $("#submit-answer").on("click", event => {
@@ -125,6 +175,12 @@ function setHandleSubmitAnswer() {
             STATE.currentAnswerCorrect = false;
         }
         STATE.displayMode = "FEEDBACK"; // mutate STATE
+        updateView();
+    });
+    $("#translate-answer").on("click", event => {
+        event.preventDefault();
+        console.log('clicking on translate answer')
+        STATE.displayMode = "TRANSLATE"
         updateView();
     });
 }
@@ -174,14 +230,14 @@ function renderFeedback(state) {
         .html(`<div class="col" id="feedback-container">
         <section role="region" aria-labelledby="feedback" id="feedback-section">
         <h3>Correct.</h3>
-        <p>${question[0].question}</p><p>${question[0].answers[0].answer}</p>
+        <p>${question.question}</p><p>${question.answers[0].answer}</p>
         </section></div>
         <!--col-->`);
         $("main").prepend(`<div class="col" id="feedback-image-container">
         <img id="feecback-image" src="${gif(state)}" alt="Happy animal GIF">
         </div><!--col-->`); // add gif
     } else {
-        $("main").html(`<div class="col" id="feedback-container"><section role="region" aria-labelledby="feedback" id="feedback-section"><h3>Wrong.</h3><p>${question[0].question}</p><p>${question[0].answers[0].answer}</p></section></div>`);
+        $("main").html(`<div class="col" id="feedback-container"><section role="region" aria-labelledby="feedback" id="feedback-section"><h3>Wrong.</h3><p>${question.question}</p><p>${question.answers[0].answer}</p></section></div>`);
         $("main").prepend(`<div class="col" id="feedback-image-container"><img id="feedback-image" src="${gif(state)}" alt="Sad animal GIF"></div>`);
     }
 }
@@ -234,5 +290,3 @@ function setHandleRestartButton() {
         updateView();
     });
 }
-
-$(updateView);
