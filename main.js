@@ -88,7 +88,6 @@ function renderTranslatedQuestion(state) {
 function generateQuestion(questionIndex) {
     console.log("`generateQuestion()` was called");
     let currentQuestion = BANK[questionIndex];
-    console.log(currentQuestion.translation.de)
     let questionStatement = `${currentQuestion.question}`;
     let questionForm = `<section role="region" aria-labelledby="question" id="question-section">
     <div class="row">
@@ -107,7 +106,11 @@ function generateQuestion(questionIndex) {
 
 function translateQuestion(questionIndex) {
     console.log("`translateQuestion()` was called");
-    let currentQuestion = BANK[questionIndex].translation.de;
+    let randomLanguage = ['de', 'es', 'fr', 'ga', 'it', 'sv']
+    var index = Math.floor(Math.random() * randomLanguage.length);
+    var language = randomLanguage[index]
+    console.log(BANK[questionIndex].translation[language])
+    let currentQuestion = BANK[questionIndex].translation[language];
     let questionStatement = `${currentQuestion.question}`;
     let questionForm = `<section role="region" aria-labelledby="question" id="question-section">
     <div class="row">
