@@ -3,7 +3,9 @@ body {
 }
 #primary_nav_wrap
 {
-	margin-top:15px
+	margin-top:15px;
+	width: 100%;
+
 }
 
 #primary_nav_wrap ul
