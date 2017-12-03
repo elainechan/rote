@@ -1,4 +1,14 @@
 'use strict';
+const database = firebase.database().ref()
+let BANK
+
+database.on('value', function(snapshot) {
+  BANK = snapshot.val()
+  console.log('db???', BANK)
+  $(updateView);
+});
+
+console.log('is this working?', database)
 
 const STATE = {
     currentQ: -1, // -1 before program starts
@@ -232,5 +242,3 @@ function setHandleRestartButton() {
         updateView();
     });
 }
-
-$(updateView);
