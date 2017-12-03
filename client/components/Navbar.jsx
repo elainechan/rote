@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../public/stylesheet.css';
 
-export default function Nav(){
+export default function Navbar(){
   return(
     <nav id="primary_nav_wrap">
     <ul>
@@ -11,7 +11,6 @@ export default function Nav(){
         <li><a href="#">HTML</a></li>
         <li><a href="#">CSS</a>
             <ul>
-                
                 <li><a href="#">Layout</a>
                 </li>
                 <li><a href="#">Grid</a></li>
