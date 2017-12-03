@@ -25,7 +25,7 @@ const BANK = [
         answers: [
             { key: 0, answer: 'The value of a <code>const</code> cannot change through re-assignment.' },
             { key: 1, answer: 'A <code>const</code> can be redeclared.' },
-            { key: 2, answer: 'It can only hold integer values.' }, 
+            { key: 2, answer: 'A <code>const</code> can only hold integer values.' }, 
             { key: 3, answer: 'The value of a <code>const</code> is immutable.' }
         ]
     }],
