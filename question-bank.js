@@ -1,5 +1,45 @@
 const BANK = [
     [{
+        question: 'What does <code>Number(undefined)</code> return?',
+        topic: 'JavaScript',
+        answers: [
+            { key: 0, answer: '<code>NaN</code>' },
+            { key: 1, answer: '<code>undefined</code>' },
+            { key: 2, answer: '<code>0</code>' }, 
+            { key: 3, answer: '<code>error: illegal operation</code>' }
+        ]
+    }], 
+    [{
+        question: 'What does <code>typeof null</code> return?',
+        topic: 'JavaScript',
+        answers: [
+            { key: 0, answer: '<code>object</code>' },
+            { key: 1, answer: '<code>symbol</code>' },
+            { key: 2, answer: '<code>boolean</code>' }, 
+            { key: 3, answer: '<code>undefined</code>' }
+        ]
+    }],
+    [{
+        question: 'Which of the following is <strong>true</strong> about <code>const</code>?',
+        topic: 'JavaScript',
+        answers: [
+            { key: 0, answer: 'The value of a <code>const</code> cannot change through re-assignment.' },
+            { key: 1, answer: 'A <code>const</code> can be redeclared.' },
+            { key: 2, answer: 'It can only hold integer values.' }, 
+            { key: 3, answer: 'The value of a <code>const</code> is immutable.' }
+        ]
+    }],
+    [{
+        question: 'Which of the following is <strong>true</strong> about <code>let</code>?',
+        topic: 'JavaScript',
+        answers: [
+            { key: 0, answer: 'It declares a block scope local variable.' },
+            { key: 1, answer: 'It declares a function.' },
+            { key: 2, answer: 'It declares a global scope variable.' }, 
+            { key: 3, answer: 'Variables declared with <code>let</code> are hoisted.' }
+        ]
+    }],
+    [{
         question: 'Which of the following is <strong>true</strong> about <code>null</code> in JavaScript?',
         topic: 'JavaScript',
         answers: [
