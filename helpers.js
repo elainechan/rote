@@ -19,12 +19,16 @@ function shuffle(arr) {
 
 // take array of objects and an indicator, return naked array of keys or properties
 function nakedValues(arrayOfObjects, zeroOrOne) { // if 0 return keys, if 1 return properties
-    console.log(`nakedValues() was called`);
-    let answers = []
-    for(let i=0; i<arrayOfObjects.length; i++) {
-      answers.push(arrayOfObjects[i].answer)
-    }
-    return answers;
+  if(zeroOrOne === 1) {
+      console.log(`nakedValues() was called`);
+      let answers = []
+      for(let i=0; i<arrayOfObjects.length; i++) {
+        answers.push(arrayOfObjects[i].answer)
+      }
+      return answers;
+  } else {
+    return arrayOfObjects
+  }
 }
 
 function getOriginalIndex(value) { // get pre-shuffle index for checking answer correctness

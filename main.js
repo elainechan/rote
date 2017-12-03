@@ -77,7 +77,7 @@ function renderTranslatedQuestion(state) {
     console.log("`renderQuestion()` was called");
     $("main").html(translateQuestion(state.currentQ));
     $("#logo-container").append(generateTopicLogo(BANK[state.currentQ].topic)); // append logo
-    $("#question-form > fieldset").append(generateAnswerChoices(state.currentQ)); // append choices
+    $("#question-form > fieldset").append(generateTranslatedAnswerChoices(state.currentQ)); // append choices
     $("#question-form").append(generateSubmitAnswerButton()); // append submit button
     $("#question-form").append(generateTranslaterButton()); // append translate button
     setHandleAnswerChecked();
@@ -110,7 +110,7 @@ function translateQuestion(questionIndex) {
     var index = Math.floor(Math.random() * randomLanguage.length);
     var language = randomLanguage[index]
     console.log(BANK[questionIndex].translation[language])
-    let currentQuestion = BANK[questionIndex].translation[language];
+    let currentQuestion = BANK[questionIndex].translation.de;
     let questionStatement = `${currentQuestion.question}`;
     let questionForm = `<section role="region" aria-labelledby="question" id="question-section">
     <div class="row">
@@ -125,6 +125,18 @@ function translateQuestion(questionIndex) {
     </div><!--row-->
     </section>`;
     return questionForm;
+}
+
+function generateTranslatedAnswerChoices(questionIndex) {
+    console.log("`generateTranslatedAnswerChoices()` was called");
+    let answers = nakedValues(BANK[STATE.currentQ].translation.de.answer, 0);
+    console.log('translated answers', BANK[STATE.currentQ].translation.de.answer)
+    let shuffledAnswers = shuffle(answers); // array
+    let answerChoices = shuffledAnswers.map( (answer, index) => {
+        let answerChoice = `<div class="answer-choice"><input type="radio" name="answer-checkbox" class="answer-checkbox" id=${getOriginalIndex(answer)}><label for="answer${getOriginalIndex(answer)}" class="answer-text">${answer}</label></div>`;
+        return answerChoice;
+    });
+    return answerChoices;
 }
 
 function generateAnswerChoices(questionIndex) {
