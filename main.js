@@ -24,6 +24,9 @@ function updateView() {
         if(STATE.displayMode === "QUESTION") {
             renderQuestion(STATE);
             renderNav(STATE.displayMode);
+        } else if(STATE.displayMode ==='TRANSLATE') {
+            renderTranslatedQuestion(STATE)
+            renderNav(STATE.displayMode)
         } else { // FEEDBACK mode
             renderFeedback(STATE);
             renderNav(STATE.displayMode);
@@ -65,13 +68,46 @@ function renderQuestion(state) {
     $("#logo-container").append(generateTopicLogo(BANK[state.currentQ].topic)); // append logo
     $("#question-form > fieldset").append(generateAnswerChoices(state.currentQ)); // append choices
     $("#question-form").append(generateSubmitAnswerButton()); // append submit button
+    $("#question-form").append(generateTranslaterButton()); // append translate button
     setHandleAnswerChecked();
     setHandleSubmitAnswer();
 }
 
+function renderTranslatedQuestion(state) {
+    console.log("`renderQuestion()` was called");
+    $("main").html(translateQuestion(state.currentQ));
+    $("#logo-container").append(generateTopicLogo(BANK[state.currentQ].topic)); // append logo
+    $("#question-form > fieldset").append(generateAnswerChoices(state.currentQ)); // append choices
+    $("#question-form").append(generateSubmitAnswerButton()); // append submit button
+    $("#question-form").append(generateTranslaterButton()); // append translate button
+    setHandleAnswerChecked();
+    setHandleSubmitAnswer();
+}
+
+
 function generateQuestion(questionIndex) {
     console.log("`generateQuestion()` was called");
     let currentQuestion = BANK[questionIndex];
+    console.log(currentQuestion.translation.de)
+    let questionStatement = `${currentQuestion.question}`;
+    let questionForm = `<section role="region" aria-labelledby="question" id="question-section">
+    <div class="row">
+    <div class="col" id="logo-container">
+    </div><!--col-->
+    <div class="col" id="question-container"><form aria-labelledby="question" id="question-form">
+    <h3 id="question-number">
+    Question ${questionIndex + 1} of ${BANK.length}
+    </h3>
+    <fieldset id="question-content"><legend id="question-statement">${questionStatement}</legend></fieldset></form>
+    </div><!--col-->
+    </div><!--row-->
+    </section>`;
+    return questionForm;
+}
+
+function translateQuestion(questionIndex) {
+    console.log("`translateQuestion()` was called");
+    let currentQuestion = BANK[questionIndex].translation.de;
     let questionStatement = `${currentQuestion.question}`;
     let questionForm = `<section role="region" aria-labelledby="question" id="question-section">
     <div class="row">
@@ -117,6 +153,12 @@ function generateSubmitAnswerButton() { // initially disabled
     return answerButton;
 }
 
+function generateTranslaterButton() {
+    console.log("`generateTranslaterButton()` was called");
+    let translateButton = `<button id="translate-answer">Translate</button>`;
+    return translateButton;
+}
+
 function setHandleSubmitAnswer() {
     console.log("`setHandleSubmitAnswer()` was called");
     $("#submit-answer").on("click", event => {
@@ -131,6 +173,12 @@ function setHandleSubmitAnswer() {
             STATE.currentAnswerCorrect = false;
         }
         STATE.displayMode = "FEEDBACK"; // mutate STATE
+        updateView();
+    });
+    $("#translate-answer").on("click", event => {
+        event.preventDefault();
+        console.log('clicking on translate answer')
+        STATE.displayMode = "TRANSLATE"
         updateView();
     });
 }
