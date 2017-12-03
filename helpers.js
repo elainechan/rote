@@ -28,9 +28,8 @@ function nakedValues(arrayOfObjects, zeroOrOne) { // if 0 return keys, if 1 retu
 }
 
 function getOriginalIndex(value) { // get pre-shuffle index for checking answer correctness
-    console.log('what is the current question?', BANK[STATE.currentQ], 'and value?', value)
-    let originalIndex = _.findIndex(BANK[STATE.currentQ].answers, function(o) { 
-      console.log('value?', value, o.answer)
+    console.log(`getOriginalIndex() was called`);
+    let originalIndex = _.findIndex(BANK[STATE.currentQ].answers, function(o) {
       return o.answer == value; 
     });
     return originalIndex;
