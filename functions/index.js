@@ -108,3 +108,4 @@ function _blurImage(
     .then(steps.uploadFile)   // Upload the Blurred image.
     .then(steps.deteleTemp);  // Erase temporal file.
 }
+>>>>>>> master
