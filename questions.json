@@ -49,14 +49,104 @@
           { "key": 3, "answer": "An uninitialized variable is automatically assigned a value of <code>null</code>." }
       ]
   },
-  "5" : {
-      "question": "Which of the following is <strong>true</strong>?",
+  "5": {
+      "question": "<code>rm index.html</code> on the command line...",
+      "topic": "Linux",
+      "answers": [
+          { "key": 0, "answer": "Removes <code>index.html</code> file from the current working directory, if it exists." },
+          { "key": 1, "answer": "Changes the current working directory to <code>index.html</code>, if it exists." },
+          { "key": 2, "answer": "Creates a new directory named <code>index.html</code>." }, 
+          { "key": 3, "answer": "Deletes the current working directory." }
+      ]
+  },
+  "6": {
+      "question": "<code>pwd</code> on the command line...",
+      "topic": "Linux",
+      "answers": [
+          { "key": 0, "answer": "Prints the current working directory." },
+          { "key": 1, "answer": "Changes the current working directory." },
+          { "key": 2, "answer": "Creates a new directory." }, 
+          { "key": 3, "answer": "Deletes the current directory." }
+      ]
+  },
+  "7": {
+      "question": "<code>cd</code> on the command line...",
+      "topic": "Linux",
+      "answers": [
+          { "key": 0, "answer": "Changes the current working directory." },
+          { "key": 1, "answer": "Prints the current working directory." },
+          { "key": 2, "answer": "Creates a new directory." }, 
+          { "key": 3, "answer": "Deletes the current directory." }
+      ]
+  },
+  "8": {
+      "question": "Which of the following statements about JavaScript functions is <strong>false</strong>?",
+      "topic": "JavaScript",
+      "answers": [
+          { "key": 0, "answer": "JavaScript functions are not hoisted." },
+          { "key": 1, "answer": "A function can accept other functions as arguments." },
+          { "key": 2, "answer": "JavaScript functions can be anonymous." }, 
+          { "key": 3, "answer": "A JavaScript function can be a property value in an object." }
+      ]
+  },
+  "9": {
+      "question": "A <code>@media</code> query...",
       "topic": "CSS",
       "answers": [
-          { "key": 0, "answer": "Both <code>fixed</code> and <code>absolute</code> elements are positioned relative to the document rather than a parent." },
-          { "key": 1, "answer": "A <code>fixed</code> element responds to its parent; an <code>absolute</code> element does not." },
-          { "key": 2, "answer": "A <code>fixed</code> element responds to scrolling; an <code>absolute</code> element does not." },
-          { "key": 3, "answer": "A <code>fixed</code> element follows document normal flow; an <code>absolute</code> element does not." }
+          { "key": 0, "answer": "Defines different style rules for different devices." },
+          { "key": 1, "answer": "Represents a generic container for video and audio content." },
+          { "key": 2, "answer": "Represents a generic container for embedded interactive content." }, 
+          { "key": 3, "answer": "Renders vector graphics in a designated area of the viewport." }
+      ]
+  },
+  "10": {
+      "question": "An <code>ID</code> selector...",
+      "topic": "CSS",
+      "answers": [
+          { "key": 0, "answer": "Is preceded by a <code>#</code> character and identifies a unique element." },
+          { "key": 1, "answer": "Is preceded by a <code>.</code> character and identifies multiple elements." },
+          { "key": 2, "answer": "Is preceded by a <code>#</code> character and identifies multiple elements." }, 
+          { "key": 3, "answer": "Is preceded by a <code>.</code> character and identifies a unique element." }
+      ]
+  },
+  "11": {
+      "question": "What is a <code>&lt;head&gt;</code> element?",
+      "topic": "HTML",
+      "answers": [
+          { "key": 0, "answer": "It provides metadata about the HTML document." },
+          { "key": 1, "answer": "It creates a hyperlink to other web pages." },
+          { "key": 2, "answer": "It represents introductory content such as navigation." }, 
+          { "key": 3, "answer": "It is used to group several controls within a web form." }
+      ]
+  },
+  "12": {
+      "question": "In an HTML document, <code>!DOCTYPE html</code>...",
+      "topic": "HTML",
+      "answers": [
+          { "key": 0, "answer": "Tells the browser how to render the document." },
+          { "key": 1, "answer": "Represents the root or the top-level element." },
+          { "key": 2, "answer": "Refers to the generic container for flow content." }, 
+          { "key": 3, "answer": "Represents the document object." }
+      ]
+  },
+  "13": {
+      "question": "In the Document Object Model (DOM), <code>window</code> refers to...",
+      "topic": "JavaScript",
+      "answers": [
+          { "key": 0, "answer": "The global object in a browser." },
+          { "key": 1, "answer": "An element returned by the DOM API." },
+          { "key": 2, "answer": "An area of a webpage visible to the user." },
+          { "key": 3, "answer": "The generic container of display properties." }
+      ]
+  },
+  "14": {
+      "question": "In the Document Object Model (DOM), <code>document</code> refers to...",
+      "topic": "JavaScript",
+      "answers": [
+          { "key": 0, "answer": "The main object of the rendered DOM." },
+          { "key": 1, "answer": "The global object in a browser." },
+          { "key": 2, "answer": "The area of a webpage visible to the user." },
+          { "key": 3, "answer": "An array of nodes or elements." }
       ]
   }
 }
