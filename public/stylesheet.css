@@ -1,0 +1,378 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.main-title{
+  position: absolute;
+  color:white;
+  z-index: 2;
+  font-size: 10vh;
+  font-family: "Avant Garde"
+}
+
+a{
+  color:black;
+}
+
+.endscreen{
+  display:flex;
+  justify-content: center;
+  height: 90vh;
+  width: 85vw;
+  background-size: cover;
+  align-items: center;
+}
+
+.final-view{
+  display: flex;
+  background-color: white;
+  align-items: center;
+  border-radius: 15px;
+  padding:2%
+}
+
+.redWin{
+  background-image: url('./images/red-win.jpg');
+}
+
+.blueWin{
+  background-image: url('./images/blue-win.jpg');
+}
+
+.assassinated{
+  background-image: url('./images/assassinated.jpg');
+}
+
+.aborted{
+  background-image: url('./images/assassinated.jpg');
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  align-items: center;
+  font-size: 200%;
+  box-shadow: 0px 2px 5px rgb(18, 70, 89);
+  background-color: black;
+}
+
+.nav-title{
+  font-family: "Avant Garde";
+  color:white;
+}
+
+.main-container{
+  background-image: url('./images/main-image.jpg');
+  background-size: cover;
+  display:flex;
+  padding-top:1%;
+  justify-content: center;
+  flex-flow: row wrap;
+  height: 100vh;
+}
+
+.lobby{
+  display:flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.login{
+  margin-right: 1%;
+  padding: 5px;
+  color:white;
+}
+
+.login:hover{
+  background-color: rgb(18, 70, 89);
+  border-radius: 6px;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  margin: 5%;
+  padding: 5%;
+  border-radius: 15px;
+  border: 1px solid black;
+  color: white;
+  font-size: 24px;
+  padding:1%;
+  background-color: rgb(33, 123, 152);
+  height: 10vh;
+}
+
+.button:hover{
+  background-color: rgb(3, 12, 15);
+  box-shadow: 5px 5px 2px grey;
+}
+
+/* NAVBAR STYLING */
+.hamburger{
+  width: 3%;
+  margin-left: 1%;
+}
+.hamburger:hover{
+  border-radius: 100%;
+  background-color: lightgrey;
+}
+
+/* BOARD STYLING */
+.board{
+  background-image: url('./images/wood-background.jpg');
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-right: 15%;
+  height:90vh;
+}
+
+.card{
+  display: flex;
+  width: 16%;
+  height: 15vh;
+  margin: 10px;
+  flex-flow: wrap;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.rules{
+  opacity: 1;
+  padding: 1%;
+}
+
+.rules-panel{
+  background-color: black;
+  color:white;
+  margin-left: 10%;
+  padding: 5%;
+  width: 30vw;
+  height:auto;
+  margin-bottom: 15%;
+  box-shadow: -10px -10px 5px rgb(18, 70, 89);
+}
+
+.login-panel{
+  background-color: black;
+  margin-bottom: 15%;
+  box-shadow: -10px -10px 5px rgb(18, 70, 89);
+}
+
+.form{
+  color:white;
+  padding:5%;
+  opacity:1;
+}
+
+.card:hover{
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.white{
+  /*align-items: flex-end;*/
+  background-image: url("http://www.codenames-partygame.nl/img/bystander.jpg");
+  background-size: 110%;
+  color: white;
+  text-shadow:
+    -1.5px -1.5px 0 #000,
+    1.5px -1.5px 0 #000,
+    -1.5px 1.5px 0 #000,
+    1.5px 1.5px 0 #000;
+}
+
+.red{
+  background-image: url("https://cf.geekdo-images.com/images/pic2598919_md.jpg");
+  background-size: 110%;
+  color: white;
+  text-shadow:
+    -1.5px -1.5px 0 #000,
+    1.5px -1.5px 0 #000,
+    -1.5px 1.5px 0 #000,
+    1.5px 1.5px 0 #000;
+}
+
+.blue{
+  background-image: url("https://www.board-game.co.uk/wp-content/uploads/blogs/Codenames-Review-Blue-Agent.jpg");
+  background-size: 110%;
+  color: white;
+  text-shadow:
+    -1.5px -1.5px 0 #000,
+    1.5px -1.5px 0 #000,
+    -1.5px 1.5px 0 #000,
+    1.5px 1.5px 0 #000;
+}
+
+.black {
+  background-image: url("https://cf.geekdo-images.com/images/pic2598926_md.jpg");
+  background-size: 110%;
+  color: white;
+  text-shadow:
+    -1.5px -1.5px 0 #000,
+    1.5px -1.5px 0 #000,
+    -1.5px 1.5px 0 #000,
+    1.5px 1.5px 0 #000;
+}
+
+.false {
+  background-color: burlywood;
+}
+
+.check-false {
+  display: none;
+}
+
+.check-true {
+  height:40%;
+}
+
+.start {
+  background-color: steelblue;
+  width: 20%;
+  color: white;
+}
+
+.sidebar {
+  display:flex;
+  flex-flow: column;
+  position: fixed;
+  top:10%;
+  right: 0;
+  width:17%;
+  background-image: url('./images/sidebar.jpg');
+  height: 100%;
+  color:white;
+  background-size: cover;
+}
+
+.main-image {
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  top: 0;
+}
+
+.start-btn {
+  display: flex;
+  color: white;
+  font-size: 24px;
+  padding:1%;
+  background-color: rgb(33, 123, 152);
+  margin:0;
+  left:40%;
+  top: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+.start-btn:hover {
+  background-color: rgb(3, 12, 15);
+}
+
+hr {
+  margin:5%
+}
+
+.sidebar-box {
+  margin:5%;
+  padding: 5%;
+  background-color: white;
+  border-radius: 15px;
+  color:black;
+}
+
+.role-btn{
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 5vh;
+  width: 5vh;
+}
+
+.role-btn:hover{
+  background-color: lightgrey;
+  /*background-image: url('http://www.clker.com/cliparts/0/A/D/Z/M/8/magnifying-glass-hi.png');*/
+}
+
+.redTeam{
+  background-color: red;
+}
+
+.blueTeam{
+  background-color: dodgerblue;
+}
+
+.checkbox{
+  height:inherit;
+}
+
+.switch:checked {
+  color: dodgerblue;
+}
+
+.me-undefined {
+  background-color:white;
+  padding:10%;
+  margin:10%;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.me-red{
+  background-color:red;
+  padding:10%;
+  margin:10%;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.me-blue{
+  background-color:blue;
+  padding:10%;
+  border-radius: 15px;
+  margin:10%;
+  border: 1px solid black;
+}
+
+.playerfalse{
+  padding:20%;
+  margin: 5%;
+  border-radius: 15px;
+  border: 1px solid black;
+  opacity: 0.5;
+}
+
+.playertrue{
+  padding:20%;
+  margin: 5%;
+  border-radius: 15px;
+  border: 1px solid black;
+  opacity: 1;
+}
+
+.playerfalse:hover{
+  box-shadow: 10px 10px 5px #888888;
+  opacity: 1;
+}
+
+.check-list{
+  height:5vh;
+}
+
+.list{
+  margin:1%;
+  height: 5%;
+}
+
+.message{
+  border: 1px solid lightgrey;
+  padding:2%;
+}
