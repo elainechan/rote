@@ -1,5 +1,5 @@
 {
-  "1": {
+  "0": {
     "question": "What does <code>Number(undefined)</code> return?",
     "topic": "JavaScript",
     "answers": [
@@ -9,7 +9,7 @@
         { "key": 3, "answer": "<code>error: illegal operation</code>" }
     ]
   },
-  "2": {
+  "1": {
       "question": "What does <code>typeof null</code> return?",
       "topic": "JavaScript",
       "answers": [
@@ -19,7 +19,7 @@
           { "key": 3, "answer": "<code>undefined</code>" }
       ]
   },
-  "3": {
+  "2": {
       "question": "Which of the following is <strong>true</strong> about <code>const</code>?",
       "topic": "JavaScript",
       "answers": [
@@ -29,7 +29,7 @@
           { "key": 3, "answer": "The value of a <code>const</code> is immutable." }
       ]
   },
-  "4": {
+  "3": {
       "question": "Which of the following is <strong>true</strong> about <code>let</code>?",
       "topic": "JavaScript",
       "answers": [
@@ -39,7 +39,7 @@
           { "key": 3, "answer": "Variables declared with <code>let</code> are hoisted." }
       ]
   },
-  "5": {
+  "4": {
       "question": "Which of the following is <strong>true</strong> about <code>null</code> in JavaScript?",
       "topic": "JavaScript",
       "answers": [
@@ -47,6 +47,16 @@
           { "key": 1, "answer": "<code>null</code> indicates that a variable has been declared but has not yet been assigned a value" },
           { "key": 2, "answer": "<code>null</code> cannot be assigned to a variable." }, 
           { "key": 3, "answer": "An uninitialized variable is automatically assigned a value of <code>null</code>." }
+      ]
+  },
+  "5" : {
+      "question": "Which of the following is <strong>true</strong>?",
+      "topic": "CSS",
+      "answers": [
+          { "key": 0, "answer": "Both <code>fixed</code> and <code>absolute</code> elements are positioned relative to the document rather than a parent." },
+          { "key": 1, "answer": "A <code>fixed</code> element responds to its parent; an <code>absolute</code> element does not." },
+          { "key": 2, "answer": "A <code>fixed</code> element responds to scrolling; an <code>absolute</code> element does not." },
+          { "key": 3, "answer": "A <code>fixed</code> element follows document normal flow; an <code>absolute</code> element does not." }
       ]
   }
 }

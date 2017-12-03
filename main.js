@@ -4,11 +4,9 @@ let BANK
 
 database.on('value', function(snapshot) {
   BANK = snapshot.val()
-  console.log('db???', BANK)
+  console.log(BANK)
   $(updateView);
 });
-
-console.log('is this working?', database)
 
 const STATE = {
     currentQ: -1, // -1 before program starts
@@ -64,7 +62,7 @@ function setHandleStartButton() {
 function renderQuestion(state) {
     console.log("`renderQuestion()` was called");
     $("main").html(generateQuestion(state.currentQ));
-    $("#logo-container").append(generateTopicLogo(BANK[state.currentQ][0].topic)); // append logo
+    $("#logo-container").append(generateTopicLogo(BANK[state.currentQ].topic)); // append logo
     $("#question-form > fieldset").append(generateAnswerChoices(state.currentQ)); // append choices
     $("#question-form").append(generateSubmitAnswerButton()); // append submit button
     setHandleAnswerChecked();
@@ -74,7 +72,7 @@ function renderQuestion(state) {
 function generateQuestion(questionIndex) {
     console.log("`generateQuestion()` was called");
     let currentQuestion = BANK[questionIndex];
-    let questionStatement = `${currentQuestion[0].question}`;
+    let questionStatement = `${currentQuestion.question}`;
     let questionForm = `<section role="region" aria-labelledby="question" id="question-section">
     <div class="row">
     <div class="col" id="logo-container">
@@ -92,7 +90,7 @@ function generateQuestion(questionIndex) {
 
 function generateAnswerChoices(questionIndex) {
     console.log("`generateAnswerChoices()` was called");
-    let answers = nakedValues(BANK[STATE.currentQ][0].answers, 1);
+    let answers = nakedValues(BANK[STATE.currentQ].answers, 1);
     let shuffledAnswers = shuffle(answers); // array
     let answerChoices = shuffledAnswers.map( (answer, index) => {
         let answerChoice = `<div class="answer-choice"><input type="radio" name="answer-checkbox" class="answer-checkbox" id=${getOriginalIndex(answer)}><label for="answer${getOriginalIndex(answer)}" class="answer-text">${answer}</label></div>`;
@@ -182,14 +180,14 @@ function renderFeedback(state) {
         .html(`<div class="col" id="feedback-container">
         <section role="region" aria-labelledby="feedback" id="feedback-section">
         <h3>Correct.</h3>
-        <p>${question[0].question}</p><p>${question[0].answers[0].answer}</p>
+        <p>${question.question}</p><p>${question.answers[0].answer}</p>
         </section></div>
         <!--col-->`);
         $("main").prepend(`<div class="col" id="feedback-image-container">
         <img id="feecback-image" src="${gif(state)}" alt="Happy animal GIF">
         </div><!--col-->`); // add gif
     } else {
-        $("main").html(`<div class="col" id="feedback-container"><section role="region" aria-labelledby="feedback" id="feedback-section"><h3>Wrong.</h3><p>${question[0].question}</p><p>${question[0].answers[0].answer}</p></section></div>`);
+        $("main").html(`<div class="col" id="feedback-container"><section role="region" aria-labelledby="feedback" id="feedback-section"><h3>Wrong.</h3><p>${question.question}</p><p>${question.answers[0].answer}</p></section></div>`);
         $("main").prepend(`<div class="col" id="feedback-image-container"><img id="feedback-image" src="${gif(state)}" alt="Sad animal GIF"></div>`);
     }
 }
