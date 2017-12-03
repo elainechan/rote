@@ -2,7 +2,7 @@
 
 Brush up your Web development knowledge for that dream job interview.
 
-[Click here to take the quiz](https://elainechan.github.io/webdev/quiz/index.html)
+[Click here to take the quiz](https://elainechan.github.io/rote/)
 
 See [requirements.md](./requirements.md) for requirements checklist.
 
