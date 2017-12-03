@@ -2,15 +2,18 @@
 
 Brush up your Web development knowledge for that dream job interview.
 
-[Click here to take the quiz](https://elainechan.github.io/webdev/quiz/index.html)
+[Click here to take the quiz](https://elainechan.github.io/rote/)
 
 See [requirements.md](./requirements.md) for requirements checklist.
 
 ## Tentative Stack
-* Backend: Node
+* Backend: Node?
 * Storage: Firebase Cloud Storage
 * Database: Firebase Realtime Database
-* Frontend: ?
+* Frontend: React
+
+* Color Scheme: [Grayscale](http://www.color-hex.com/color-palette/4246)
+* Font: [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
 
 ## Topics Covered
 * [x] HTML

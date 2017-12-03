@@ -1,0 +1,21 @@
+[debug] [2017-12-03T15:32:58.786Z] ----------------------------------------------------------------------
+[debug] [2017-12-03T15:32:58.788Z] Command:       /Users/Leo/.nvm/versions/node/v8.9.1/bin/node /Users/Leo/.nvm/versions/node/v8.9.1/bin/firebase init
+[debug] [2017-12-03T15:32:58.788Z] CLI Version:   3.15.4
+[debug] [2017-12-03T15:32:58.788Z] Platform:      darwin
+[debug] [2017-12-03T15:32:58.788Z] Node Version:  v8.9.1
+[debug] [2017-12-03T15:32:58.789Z] Time:          Sun Dec 03 2017 10:32:58 GMT-0500 (EST)
+[debug] [2017-12-03T15:32:58.789Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-03T15:32:58.801Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-12-03T15:32:58.801Z] > authorizing via signed-in user
+[info] 
+     🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥     🔥🔥🔥     🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥     🔥🔥 🔥🔥       🔥🔥     🔥🔥  🔥🔥   🔥🔥  🔥🔥       🔥🔥
+     🔥🔥🔥🔥🔥🔥    🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥   🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥    🔥🔥  🔥🔥       🔥🔥     🔥🔥 🔥🔥     🔥🔥       🔥🔥 🔥🔥
+     🔥🔥       🔥🔥🔥🔥 🔥🔥     🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥     🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/Leo/Rote
+

@@ -58,3 +58,4 @@ function getImgURL(str) { // takes filename as input and returns full image URL
     let url = file.concat(`?raw=true`); // concat url with retrieve code
     return url;
 }
+
