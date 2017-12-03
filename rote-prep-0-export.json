@@ -1,0 +1,17 @@
+{
+  "answers" : [ {
+    "answer" : "<code>NaN</code>",
+    "key" : 0
+  }, {
+    "answer" : "<code>undefined</code>",
+    "key" : 1
+  }, {
+    "answer" : "<code>0</code>",
+    "key" : 2
+  }, {
+    "answer" : "<code>error: illegal operation</code>",
+    "key" : 3
+  } ],
+  "question" : "What does <code>Number(undefined)</code> return?",
+  "topic" : "JavaScript"
+}
