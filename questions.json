@@ -1,0 +1,36 @@
+// wireframe of various data formats
+{
+    "unlabelledQuestion" : {
+        "_comment": "Unlabelled answers with implicit index",
+        "question": "What does 'HTML' stand for?",
+        "rightAnswer": "Hypertext markup language.",
+        "answers": [
+            "fe",
+            "fi",
+            "fo",
+            "fum"
+        ]
+    },
+    
+    "labelledQuestion" : {
+        "_comment": "Labelled answers with implicit index",
+        "question": "What is a function?",
+        "answers": {
+            "a": "fe",
+            "b": "fi",
+            "c": "fo",
+            "d": "fum"
+        },
+        "rightAnswer": "a"
+    },
+
+    "indexedQuestion": {
+        "_comment": "Labelled answers with explicit index",
+        "question": "What does 'CSS' stand for?",
+        "answers": [
+            { "key": "1", "answer": "Apple"}, 
+            { "key": "2", "answer": "Orange"}, 
+            { "key": "3", "answer": "Banana"}
+        ]
+    }
+}

@@ -1,0 +1,246 @@
+/* Default: Mobile */
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto;
+    font-size: 16px;
+}
+
+header {
+    text-align: center;
+    padding: 6px;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+h1 {
+    margin-bottom: 3px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+h3 {
+    margin: 12px;
+}
+
+#start-section, #end-section, #start-image, #end-image {
+    text-align: center;
+}
+
+#end-image-container {
+    padding: 6px 10px;
+    margin: auto;
+    width: 50%;
+    overflow: hidden;
+}
+
+#start-image-container {
+    padding: 6px 10px;
+    margin: auto;
+    width: 50%;
+    max-height: 300px;
+    min-height: 100px;
+    overflow: hidden;
+    clear: both;
+}
+
+#start-image {
+    min-height: 100px;
+    margin-top: -40%;
+    width: 100%;
+}
+
+#end-image {
+    margin-top: -5%;
+    margin-bottom: -5%;
+    width: 100%;
+}
+
+#topic-logo {
+    max-width: 50px;
+    display: block;
+    margin: auto;
+}
+
+#logo-container, #feedback-image-container {
+    margin: auto;
+}
+
+section { /* <section> */
+    padding: 6px;
+    margin: 6px;
+}
+
+#question-container, #feedback-container {
+    clear: right;
+    float: left;
+    margin: auto;
+}
+
+#question-content {
+    border: none;
+    margin-top: 6px;
+}
+
+#question-number {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 16px;
+    font-weight: 400;
+}
+
+.answer-choice {
+    margin: 3px;
+}
+
+.answer-text {
+    margin-left: 3px;
+}
+
+code {
+    background-color: #f0f0f0;
+}
+
+#feedback-image-container {
+    margin: auto;
+    max-width: 400px;
+    max-height: 300px;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+#feedback-image {
+    display: block;
+    margin: auto;
+    max-width: 360px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.button-container { /* only center Start and Restart buttons */
+    text-align: center;
+}
+
+button {
+    padding: 10px 16px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px 2px 1px #969696;
+}
+button:hover {
+    border: 1px solid #bdbdbd;
+}
+
+nav {
+    text-align: center;
+    bottom: 0px;
+    padding: 6px 10px;
+    margin: 6px 10px;
+}
+
+footer {
+    padding: 6px 5px;
+    margin: 6px 5px;
+    text-align: center;
+    clear: left; /* fixed glitch */
+}
+
+.row::before, .row::after {
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.col {
+    width: 100%;
+    float: left;
+}
+
+/* Non-mobile */
+@media only screen and (min-width: 640px) {
+    .col {
+        float: left;
+    }
+    #start-image-container, #end-image-container {
+        padding: 12px 30px;
+    }
+    #logo-container {
+        width: 20%;
+    }
+    #question-container {
+        width: 80%;
+
+    }
+    #feedback-image-container {
+        width: 40%;
+        min-height: 300px;
+
+    }
+    #feedback-container {
+        width: 60%;
+
+    }
+    header {
+        text-align: center;
+        padding: 12px;
+        margin: 12px;
+    }
+    h1 {
+        font-size: 36px;
+        font-weight: 800;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    body {
+        font-size: 20px;
+    }
+    #question-number {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 16px;
+        font-weight: 600;
+    }
+    #question-content {
+        margin-top: 20px;
+    }
+    .answer-choice {
+        margin: 12px;
+    }
+    
+    .answer-text {
+        margin-left: 12px;
+    }
+    #topic-logo {
+        max-width: 100px;
+    }
+    footer {
+        padding: 12px 10px;
+        margin: 12px 10px;
+    }
+    nav {
+        padding: 12px 30px;
+        margin: 12px 60px;
+    }
+    button { /* todo: make all buttons display in same place */
+        padding: 12px 30px;
+        margin: 12px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
