@@ -1,36 +1,53 @@
-// wireframe of various data formats
 {
-    "unlabelledQuestion" : {
-        "_comment": "Unlabelled answers with implicit index",
-        "question": "What does 'HTML' stand for?",
-        "rightAnswer": "Hypertext markup language.",
-        "answers": [
-            "fe",
-            "fi",
-            "fo",
-            "fum"
-        ]
-    },
-    
-    "labelledQuestion" : {
-        "_comment": "Labelled answers with implicit index",
-        "question": "What is a function?",
-        "answers": {
-            "a": "fe",
-            "b": "fi",
-            "c": "fo",
-            "d": "fum"
-        },
-        "rightAnswer": "a"
-    },
-
-    "indexedQuestion": {
-        "_comment": "Labelled answers with explicit index",
-        "question": "What does 'CSS' stand for?",
-        "answers": [
-            { "key": "1", "answer": "Apple"}, 
-            { "key": "2", "answer": "Orange"}, 
-            { "key": "3", "answer": "Banana"}
-        ]
-    }
+  "1": {
+    "question": "What does <code>Number(undefined)</code> return?",
+    "topic": "JavaScript",
+    "answers": [
+        { "key": 0, "answer": "<code>NaN</code>" },
+        { "key": 1, "answer": "<code>undefined</code>" },
+        { "key": 2, "answer": "<code>0</code>" }, 
+        { "key": 3, "answer": "<code>error: illegal operation</code>" }
+    ]
+  },
+  "2": {
+      "question": "What does <code>typeof null</code> return?",
+      "topic": "JavaScript",
+      "answers": [
+          { "key": 0, "answer": "<code>object</code>" },
+          { "key": 1, "answer": "<code>symbol</code>" },
+          { "key": 2, "answer": "<code>boolean</code>" }, 
+          { "key": 3, "answer": "<code>undefined</code>" }
+      ]
+  },
+  "3": {
+      "question": "Which of the following is <strong>true</strong> about <code>const</code>?",
+      "topic": "JavaScript",
+      "answers": [
+          { "key": 0, "answer": "The value of a <code>const</code> cannot change through re-assignment." },
+          { "key": 1, "answer": "A <code>const</code> can be redeclared." },
+          { "key": 2, "answer": "It can only hold integer values." }, 
+          { "key": 3, "answer": "The value of a <code>const</code> is immutable." }
+      ]
+  },
+  "4": {
+      "question": "Which of the following is <strong>true</strong> about <code>let</code>?",
+      "topic": "JavaScript",
+      "answers": [
+          { "key": 0, "answer": "It declares a block scope local variable." },
+          { "key": 1, "answer": "It declares a function." },
+          { "key": 2, "answer": "It declares a global scope variable." }, 
+          { "key": 3, "answer": "Variables declared with <code>let</code> are hoisted." }
+      ]
+  },
+  "5": {
+      "question": "Which of the following is <strong>true</strong> about <code>null</code> in JavaScript?",
+      "topic": "JavaScript",
+      "answers": [
+          { "key": 0, "answer": "<code>null</code> is a primitive type in JavaScript." },
+          { "key": 1, "answer": "<code>null</code> indicates that a variable has been declared but has not yet been assigned a value" },
+          { "key": 2, "answer": "<code>null</code> cannot be assigned to a variable." }, 
+          { "key": 3, "answer": "An uninitialized variable is automatically assigned a value of <code>null</code>." }
+      ]
+  }
 }
+
