@@ -49,7 +49,7 @@
         * does not mutate `STATE` _Model_
 
 ### Files
-* HTML wireframe: `index.html`: wireframe
+* HTML wireframe: `index.html`
 * Main styles and layout: `main.css`
 * Main program: `main.js`
 * Helper functions for manipulating data and loading assets: `helpers.js`
