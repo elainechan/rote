@@ -105,7 +105,7 @@ section { /* <section> */
 }
 
 code {
-    background-color: #f0f0f0;
+    background-color: #eeeeee;
 }
 
 #feedback-image-container {
@@ -135,14 +135,16 @@ button {
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
-    border: 1px solid #d9d9d9;
     font-weight: 500;
     letter-spacing: 1px;
-    background-color: #f0f0f0;
-    box-shadow: 2px 2px 2px 1px #969696;
+    background-color: #eee;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 2px 1px #666;
 }
 button:hover {
-    border: 1px solid #bdbdbd;
+    box-shadow: #333;
+    border: 1px solid #666;
+    background-color: #999;
 }
 
 nav {
