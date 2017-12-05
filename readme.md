@@ -4,15 +4,6 @@
 
 See [requirements.md](./requirements.md) for requirements checklist.
 
-## Tentative Stack
-* Backend: Node?
-* Storage: Firebase Cloud Storage
-* Database: Firebase Realtime Database
-* Frontend: React
-
-* Color Scheme: [Grayscale](http://www.color-hex.com/color-palette/4246)
-* Font: [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
-
 ## Topics Covered
 * [x] HTML
 * [x] CSS
@@ -34,6 +25,7 @@ See [requirements.md](./requirements.md) for requirements checklist.
 ## Displays
 * Start page
 * Question content: randomized questions and answer choices in each cycle
+* Translate: option to translate questions and answers to another language
 * Feedback: number of questions right, number wrong, number remaining
 * Overall result
 
@@ -60,6 +52,11 @@ See [requirements.md](./requirements.md) for requirements checklist.
 * `helpers.js`: helper functions for manipulating data and loading assets
 * `question-bank.js`: question content
 
+## Build
+* Database: Firebase Realtime Database
+* Color Scheme: [Grayscale](http://www.color-hex.com/color-palette/4246)
+* Font: [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
+
 ## Enhancement
 
 ### User Stories
@@ -69,6 +66,7 @@ See [requirements.md](./requirements.md) for requirements checklist.
     - [ ] choose one or more topic(s)
     - [ ] choose the number of questions they have to answer.
     - [ ] choose difficulty level
+    - [x] choose to display questions and answers in another language
 
 2. Level 2 Authentication, CRUD (medium)
     - Users should be able to:
