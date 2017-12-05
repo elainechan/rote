@@ -22,14 +22,16 @@ See [requirements.md](./requirements.md) for requirements checklist.
 * [ ] Algorithms (Searching, sorting...)
 * [ ] Design Patterns (MVC, Singleton, Factory, Decorator...)
 
-## Displays
+## Design
+
+### Displays
 * Start page
 * Question content: randomized questions and answer choices in each cycle
 * Translate: option to translate questions and answers to another language
 * Feedback: number of questions right, number wrong, number remaining
 * Overall result
 
-## Design Pattern: Model-View-Controller
+### Pattern: Model-View-Controller
 * _Model_: `BANK` (immutable), `STATE` (mutable)
 * _View_: `render`, `generate`
 * _Controller_: `update`, `setHandle`
@@ -45,15 +47,21 @@ See [requirements.md](./requirements.md) for requirements checklist.
         * calls `render` to change _View_
         * does not mutate `STATE` _Model_
 
-## Files
-* `index.html`: startup wireframe
-* `main.css`: styles and layout
-* `main.js`: main program
-* `helpers.js`: helper functions for manipulating data and loading assets
-* `question-bank.js`: question content
+### Files
+* HTML wireframe: `index.html`: wireframe
+* Main styles and layout: `main.css`
+* Main program: `main.js`
+* Helper functions for manipulating data and loading assets: `helpers.js`
+* Question content: `questions.json` (serverless version), `question-bank.js` (static version) 
 
-## Build
-* Database: Firebase Realtime Database
+### Build
+* React components: [@moyourib](https://github.com/Moyourib), [@reyesjunk](https://github.com/Reyesjunk) 
+* Database: [Firebase Realtime Database](https://firebase.google.com/docs/database/) by [@corvids](https://github.com/Corvids)
+* Translation: [Google Cloud Translation](https://cloud.google.com/translate/) with [Firebase Cloud Functions](https://firebase.google.com/docs/functions/) by [@elainechan](https://github.com/elainechan)
+* Logo design: [@reyesjunk](https://github.com/Reyesjunk)
+* Presentation: [Slides](https://docs.google.com/presentation/d/1Sas_XPHpI9glNbls8PJfacyzZMJGn-m-X526d_FBV6U/edit#slide=id.g2a1e416af0_1_13) by [@moyourib](https://github.com/Moyourib)
+
+### Theme
 * Color Scheme: [Grayscale](http://www.color-hex.com/color-palette/4246)
 * Font: [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
 
@@ -96,10 +104,11 @@ See [requirements.md](./requirements.md) for requirements checklist.
 * [ ] Get/request APIs
 
 ### Add Features
-* [ ] Selection menu
+* [x] Selection menu
     * [ ] Option to select quiz size (number of questions)
     * [ ] Option to select topic area
     * [ ] Option to select difficulty
+    * [x] Option to select language
     * [ ] Access reference material
     * [ ] Access analytics
 * [ ] Feedback enhancement
@@ -119,8 +128,8 @@ See [requirements.md](./requirements.md) for requirements checklist.
 ### Improve Design
 * [ ] Grid system
 * [ ] Style guide
-* [ ] Navigation menu [example](https://codepen.io/philhoyt/pen/ujHzd)
-    * [ ] Drop down
+* [x] Navigation menu [example](https://codepen.io/philhoyt/pen/ujHzd)
+    * [x] Drop down
     * [ ] Tabs
 
 ### App Refactor
