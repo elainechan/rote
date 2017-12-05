@@ -2,8 +2,6 @@
 
 # [Give it a go](https://elainechan.github.io/rote/)
 
-See [requirements.md](./requirements.md) for requirements checklist.
-
 ## Topics Covered
 * [x] HTML
 * [x] CSS
@@ -23,6 +21,9 @@ See [requirements.md](./requirements.md) for requirements checklist.
 * [ ] Design Patterns (MVC, Singleton, Factory, Decorator...)
 
 ## Design
+
+### Requirements
+* See [requirements.md](./requirements.md).
 
 ### Displays
 * Start page
