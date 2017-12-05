@@ -1,4 +1,4 @@
-![alt-text](https://github.com/elainechan/rote/blob/master/logos/Rote-logo.png?raw=true)
+![Logo](https://github.com/elainechan/rote/blob/master/logos/Rote-logo.png?raw=true)
 
 # [Give it a go](https://elainechan.github.io/rote/)
 
