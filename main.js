@@ -12,7 +12,7 @@ const STATE = {
     currentQ: -1, // -1 before program starts
     numRight: 0,
     numWrong: 0,
-    displayMode: "QUESTION", // either QUESTION or FEEDBACK.
+    displayMode: "QUESTION", // either QUESTION, TRANSLATE, or FEEDBACK.
     currentAnswerCorrect: false,
     language: 'en'
 };

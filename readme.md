@@ -95,8 +95,8 @@ See [requirements.md](./requirements.md) for requirements checklist.
 
 ### Add Backend
 * [ ] Server
-* [ ] JSON data structure ([example](./questions.json))
-* [ ] Database
+* [x] JSON data structure ([example](./questions.json))
+* [x] Database
 * [ ] Get/request APIs
 
 ### Add Features
