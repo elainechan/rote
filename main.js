@@ -200,10 +200,10 @@ function generateStatus(state) {
 function renderNav(displayMode) {
     console.log("`renderNav()` was called");
     if(displayMode === "FEEDBACK" && STATE.currentQ < BANK.length) { // adding < BANK.length fixed issue where after last question it still shows "1 to go"
-        $("nav").html(generateNextButton()); // display "Next" button
+        $("#bottom-nav").html(generateNextButton()); // display "Next" button
         STATE.currentQ += 1; // mutate state for correct display info
     } else {
-        $("nav").html("");
+        $("#bottom-nav").html("");
     }
     setHandleNextButton();
 }
