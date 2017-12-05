@@ -260,7 +260,7 @@ function renderFeedback(state) {
 function renderEnd() {
     console.log("`renderEnd()` was called");
     $("main").html(generateEnd());
-    $("nav").html(generateRestartButton());
+    $("#bottom-nav").html(generateRestartButton());
     $("footer").html(""); // remove status display
     setHandleRestartButton();
 }
