@@ -62,7 +62,7 @@ See [requirements.md](./requirements.md) for requirements checklist.
 * Presentation: [Slides](https://docs.google.com/presentation/d/1Sas_XPHpI9glNbls8PJfacyzZMJGn-m-X526d_FBV6U/edit#slide=id.g2a1e416af0_1_13) by [@moyourib](https://github.com/Moyourib)
 
 ### Theme
-* Color Scheme: [Grayscale](http://www.color-hex.com/color-palette/4246)
+* Color Scheme: [grayscale](http://www.color-hex.com/color-palette/4246), [Web-safe grayscale](http://www.color-hex.com/color-palette/3046)
 * Font: [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
 
 ## Enhancement
@@ -144,14 +144,13 @@ function initialize() {
 }
 $(initialize); // call on first run
 ```
-
- * [ ] (Optional) Preload all elements of app use cycle
- * [ ] Hide and show elements through use cycle according to `STATE`
-
+ * [ ] (Optional) Preload
+    - [ ] Preload all HTML elements at startup
+    - [ ] Hide and show elements through use cycle according to `STATE`
 * [ ] Function to crop image
-    * associate image filename to cropping data
-    * array of filenames
-    * key value pairs (img: dimension)
+    - [ ] associate image filename to cropping data
+    - [ ] array of filenames
+    - [ ] key value pairs (img: dimension)
 ```javascript
 function cropGif() {
     /*
@@ -170,6 +169,17 @@ function cropGif() {
 ```
 
 ## Reference
+
+### Web Standards Reference
+* Progressive Web Apps
+    - [Tutorial (Eric Elliot)](https://medium.com/javascript-scene/native-apps-are-doomed-ac397148a2c0)
+* Web App Manifest
+    - [Tutorial (Sam Thorogood, Google)](https://medium.com/dev-channel/how-to-add-a-web-app-manifest-and-mobile-proof-your-site-450e6e485638)
+    - [W3C Documentation](https://www.w3.org/TR/appmanifest/)
+
+### Design
+* [Color Hex Color Codes](http://www.color-hex.com/)
+
 ### Content Reference
 * [Google Tech Dev Guide Foundations Path](https://techdevguide.withgoogle.com/paths/foundational/)
 * [Coding Interview University repo by an Amazon engineer](https://github.com/jwasham/coding-interview-university)
@@ -179,8 +189,8 @@ function cropGif() {
 
 ### App Reference
 * Max Carlquist music quiz 
-    * [Codepen](https://codepen.io/Tenkaklet/pen/QEpWPo?editors=1111)
-    * [Repo](https://github.com/Tenkaklet/MusicQuiz/blob/master/index.html)
+    - [Codepen](https://codepen.io/Tenkaklet/pen/QEpWPo?editors=1111)
+    - [Repo](https://github.com/Tenkaklet/MusicQuiz/blob/master/index.html)
 * [W3Schools Quizzes](https://www.w3schools.com/quiztest/quiztest.asp?Qtest=HTML)
 * [Building a Simple Quiz (CSS-Tricks)](https://css-tricks.com/building-a-simple-quiz/)
 * [Make a Simple Javascript Quiz (Sitepoint)](https://www.sitepoint.com/simple-javascript-quiz/)
