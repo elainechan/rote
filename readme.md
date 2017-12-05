@@ -1,5 +1,7 @@
 # Rote
 
+![alt-text](https://github.com/elainechan/rote/blob/master/logos/rote.png?raw=true)
+
 Brush up your Web development knowledge for that dream job interview.
 
 [Click here to take the quiz](https://elainechan.github.io/rote/)
