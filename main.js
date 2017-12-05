@@ -41,9 +41,11 @@ function updateView() {
 function renderStart() {
     console.log("`renderStart()` was called");
     let startImage = `./gifs/start/start.gif`;
+    $("main").html('');
     $("main").html(`<section role="region" aria-labelledby="start-page" id="start-section">
     <h2 id="subhead">Welcome to your interview.</h2><p>We are looking for a junior developer with a master degree and the experience of a senior developer, at the salary of an intern.</p><div id="start-image-container"><img id="start-image" src=${startImage} alt="Mulder and Scully looking at the sky"></div>
 </section>`);
+    $("#bottom-nav").html('');
     $("#bottom-nav").html(generateStartButton());
     setHandleStartButton();
 }
