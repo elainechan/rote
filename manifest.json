@@ -1,0 +1,13 @@
+{
+  "name": "Rote",
+  "short_name": "Rote",
+  "description": "Last-minute preparation for technical interviews.",
+  "start_url": "./index.html",
+  "background_color": "#fff",
+  "theme_color": "#eee",
+  "icons": [{
+    "src": "Rote-logo.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  }]
+}
