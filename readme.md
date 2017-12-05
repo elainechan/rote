@@ -1,6 +1,6 @@
 ![alt-text](https://github.com/elainechan/rote/blob/master/logos/rote.png?raw=true)
 
-[Click here to start](https://elainechan.github.io/rote/)
+# [Give it a go](https://elainechan.github.io/rote/)
 
 See [requirements.md](./requirements.md) for requirements checklist.
 
