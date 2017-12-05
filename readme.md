@@ -60,6 +60,7 @@ See [requirements.md](./requirements.md) for requirements checklist.
 * Translation: [Google Cloud Translation](https://cloud.google.com/translate/) with [Firebase Cloud Functions](https://firebase.google.com/docs/functions/) by [@elainechan](https://github.com/elainechan)
 * Logo design: [@reyesjunk](https://github.com/Reyesjunk)
 * Presentation: [Slides](https://docs.google.com/presentation/d/1Sas_XPHpI9glNbls8PJfacyzZMJGn-m-X526d_FBV6U/edit#slide=id.g2a1e416af0_1_13) by [@moyourib](https://github.com/Moyourib)
+* Based on [Web Developer Interview Quiz](https://github.com/elainechan/webdev/tree/master/quiz)
 
 ### Theme
 * Color Scheme: [grayscale](http://www.color-hex.com/color-palette/4246), [Web-safe grayscale](http://www.color-hex.com/color-palette/3046)
