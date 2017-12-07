@@ -2,6 +2,11 @@
 
 # [Give it a go](https://elainechan.github.io/rote/)
 
+## Contributors
+* [Moyouri Bhattacharjee](https://github.com/Moyourib)
+* [Jennifer Joo](https://github.com/Corvids)
+* [Ramon Reyes](https://github.com/Reyesjunk)
+
 ## Topics Covered
 * [x] HTML
 * [x] CSS
@@ -66,6 +71,7 @@
 ### Theme
 * Color Scheme: [grayscale](http://www.color-hex.com/color-palette/4246), [Web-safe grayscale](http://www.color-hex.com/color-palette/3046)
 * Font: [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
+
 
 ## Enhancement
 
