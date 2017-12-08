@@ -2,8 +2,9 @@
 
 # [Give it a go](https://elainechan.github.io/rote/)
 
-## Contributors (alphabetical order)
+## Developers (alphabetical order)
 * [Moyouri Bhattacharjee](https://github.com/Moyourib)
+* [Elaine Chan](https://github.com/elainechan)
 * [Jennifer Joo](https://github.com/Corvids)
 * [Ramon Reyes](https://github.com/Reyesjunk)
 
