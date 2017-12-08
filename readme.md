@@ -8,6 +8,8 @@
 <div align="center">
 <h1><a href="https://elainechan.github.io/rote/">Give it a go</a></h1>
 </div>
+<br>
+<br>
 
 ## Developers
 In alphabetical order:
