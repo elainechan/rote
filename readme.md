@@ -2,7 +2,8 @@
 
 # [Give it a go](https://elainechan.github.io/rote/)
 
-## Developers (alphabetical order)
+## Developers
+In alphabetical order:
 * [Moyouri Bhattacharjee](https://github.com/Moyourib)
 * [Elaine Chan](https://github.com/elainechan)
 * [Jennifer Joo](https://github.com/Corvids)
