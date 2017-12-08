@@ -1,4 +1,5 @@
 ![Logo](https://github.com/elainechan/rote/blob/master/logos/Rote-logo.png?raw=true)
+Logo by [Ramon Reyes](https://github.com/Reyesjunk)
 
 # [Give it a go](https://elainechan.github.io/rote/)
 
@@ -28,6 +29,14 @@ In alphabetical order:
 * [ ] Design Patterns (MVC, Singleton, Factory, Decorator...)
 
 ## Design
+
+### Build
+* Frontend: React components by [@moyourib](https://github.com/Moyourib), [@reyesjunk](https://github.com/Reyesjunk) 
+* Design: App logo by [@reyesjunk](https://github.com/Reyesjunk)
+* Database: [Firebase Realtime Database](https://firebase.google.com/docs/database/) by [@corvids](https://github.com/Corvids)
+* Translation: [Google Cloud Translation](https://cloud.google.com/translate/) with [Firebase Cloud Functions](https://firebase.google.com/docs/functions/) by [@elainechan](https://github.com/elainechan)
+* Presentation: [Slide deck](https://docs.google.com/presentation/d/1Sas_XPHpI9glNbls8PJfacyzZMJGn-m-X526d_FBV6U/edit#slide=id.g2a1e416af0_1_13) by [@moyourib](https://github.com/Moyourib)
+* Based on [Web Developer Interview Quiz](https://github.com/elainechan/webdev/tree/master/quiz)
 
 ### Requirements
 * See [requirements.md](./requirements.md).
@@ -61,14 +70,6 @@ In alphabetical order:
 * Main program: `main.js`
 * Helper functions for manipulating data and loading assets: `helpers.js`
 * Question content: `questions.json` (serverless version), `question-bank.js` (static version) 
-
-### Build
-* Frontend: React components by [@moyourib](https://github.com/Moyourib), [@reyesjunk](https://github.com/Reyesjunk) 
-* Design: App logo by [@reyesjunk](https://github.com/Reyesjunk)
-* Database: [Firebase Realtime Database](https://firebase.google.com/docs/database/) by [@corvids](https://github.com/Corvids)
-* Translation: [Google Cloud Translation](https://cloud.google.com/translate/) with [Firebase Cloud Functions](https://firebase.google.com/docs/functions/) by [@elainechan](https://github.com/elainechan)
-* Presentation: [Slide deck](https://docs.google.com/presentation/d/1Sas_XPHpI9glNbls8PJfacyzZMJGn-m-X526d_FBV6U/edit#slide=id.g2a1e416af0_1_13) by [@moyourib](https://github.com/Moyourib)
-* Based on [Web Developer Interview Quiz](https://github.com/elainechan/webdev/tree/master/quiz)
 
 ### Theme
 * Color Scheme: [grayscale](http://www.color-hex.com/color-palette/4246), [Web-safe grayscale](http://www.color-hex.com/color-palette/3046)
