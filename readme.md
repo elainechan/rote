@@ -4,7 +4,8 @@
 <em>Logo designed by <a href="https://github.com/Reyesjunk">@Reyesjunk</a></em>
 </p>
 </div>
-
+<br>
+<br>
 <div align="center">
 <h1><a href="https://elainechan.github.io/rote/">Give it a go</a></h1>
 </div>
