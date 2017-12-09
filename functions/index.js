@@ -6,7 +6,37 @@ admin.initializeApp(functions.config().firebase);
 const request = require('request-promise');
 
 // List of output languages.
-const LANGUAGES = ['en', 'es', 'de', 'fr', 'sv', 'ga', 'it', 'jp'];
+/*
+en = English
+zh-CN = Chinese (Simplified)
+zh-TW = Chinese (Traditional)
+es = Spanish
+de = German
+fr = French
+sv = Swedish
+it = Italian
+jp = Japanese
+hi = Hindi
+ur = Urdu
+ar = Arabic
+ru = Russian
+id = Indonesian
+ms = Malay
+bn = Bengal
+pt = Portughese
+ha = Hausa
+pa = Punjabi
+fa = Persian
+sw = Swahili
+te = Telugu
+jw = Javanese
+ko = Korean
+ta = Tamil
+mr = Marathi
+tr = Turkish
+vi = Vietnamese
+*/
+const LANGUAGES = ['en', 'zh-CN', 'zh-TW', 'es', 'de', 'fr', 'sv', 'it', 'jp', 'hi', 'ur', 'ar', 'ru', 'id', 'ms', 'bn', 'pt', 'ha', 'pa', 'fa', 'sw', 'te', 'jw', 'ko', 'ta', 'mr', 'tr', 'vi'];
 
 // Translate an incoming message.
 exports.translate = functions.database.ref('/{questionID}').onWrite(event => {
