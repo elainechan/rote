@@ -200,10 +200,15 @@ function cropGif() {
 
 ### Content Reference
 * [Google Tech Dev Guide Foundations Path](https://techdevguide.withgoogle.com/paths/foundational/)
-* [Coding Interview University repo by an Amazon engineer](https://github.com/jwasham/coding-interview-university)
-* [Frontend interview question list](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
+* [Base CS by Vaidehi Joshi](https://medium.com/basecs)
+* [John Washam's (Amazon) Coding Interview University](https://github.com/jwasham/coding-interview-university)
+* [Yanshun's (Facebook) Tech Interview Handbook](https://github.com/yangshun/tech-interview-handbook)
+* [Kevin Naughton Jr. Algorithm Notes + CTCI List](https://github.com/kdn251/interviews)
+* [Python time complexity](https://wiki.python.org/moin/TimeComplexity)
+* [Frontend interview questions list](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
 * [FreeCodeCamp frontend interview guide](https://medium.freecodecamp.org/cracking-the-front-end-interview-9a34cd46237)
 * [Frontend interview guide by David Shariff](http://davidshariff.com/blog/preparing-for-a-front-end-web-development-interview-in-2017/)
+* [Rico's Cheatsheets](https://devhints.io/)
 
 ### App Reference
 * Max Carlquist music quiz 

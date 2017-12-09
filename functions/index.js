@@ -66,7 +66,7 @@ function createTranslateUrl(source, target, payload) {
 }
 
 function createTranslationPromise(source, target, key, message, field) {
-    console.log(`createTranslationPromises() called, mesage = ${message}`);
+    console.log(`createTranslationPromises() called, message = ${message}`);
     return request(createTranslateUrl(source, target, message), {resolveWithFullResponse: true}).then(
       response => {
         if (response.statusCode === 200) {
