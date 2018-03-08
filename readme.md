@@ -1,3 +1,4 @@
+Note to self: add questions on HTTP status codes
 <div align="center">
 <img src="https://github.com/elainechan/rote/blob/master/logos/Rote-logo.png?raw=true" alt="Rote logo" width="800">
 <p>
